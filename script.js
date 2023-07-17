@@ -52,3 +52,31 @@
 
 // var greaterValue = (num1 >num2 && num1 > num3)?num1 : (num2>num1 && num2>num3)?num2 : num3;
 // console.log(greaterValue)
+
+
+// FizzBuzz GAME 
+
+
+// let num = prompt("Enter a number: ");
+// if (num % 3 == 0 && num % 5 == 0){
+//     console.log("FizzBuzz")
+// }else if (num % 3 == 0){
+//     console.log("Fizz")
+// }else if(num % 5 == 0){
+//     console.log("Buzz")
+// }else {
+//     console.log("Nothing")
+// }
+
+
+// FizzBuzz Game with Ternary Operator
+
+// let num = prompt('Enter a number: ')
+// var bothDiv = 'FizzBuzz'
+// var div3 = 'Fizz'
+// var div5 = 'Buzz'
+// var other = 'Nothing'
+
+// var divisible = (num % 3 == 0 && num % 5 == 0)?bothDiv : (num % 3 == 0)?div3 : (num % 5 == 0)?div5 : other;
+// console.log(divisible)
+
