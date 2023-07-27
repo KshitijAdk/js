@@ -79,4 +79,3 @@
 
 // var divisible = (num % 3 == 0 && num % 5 == 0)?bothDiv : (num % 3 == 0)?div3 : (num % 5 == 0)?div5 : other;
 // console.log(divisible)
-
