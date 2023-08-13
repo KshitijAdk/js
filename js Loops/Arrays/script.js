@@ -113,8 +113,7 @@
 // }
 // sumArray()
 
-
-// Finding max and min number in an array 
+// Finding max and min number in an array
 // function findMaxMin() {
 //   let arr = [1, 2, 3, 4, 5];
 //   let min = arr[0];
@@ -131,3 +130,78 @@
 //   console.log(result)
 // }
 // findMaxMin();
+
+// const person = {
+//     name: "Kshitij",
+//     greet: function() {
+//       console.log(`Hello, my name is ${this.name}`);
+//     }
+//   };
+
+//   person.greet();
+
+// function myName(){
+//     this.name = 'Kshitij';
+// }
+// var a = new myName
+// console.log(`Hello, My name is ${a.name}`)
+
+
+// var numbers = [23,45,56,35,67]
+// var newArray = numbers.map(myFunction);
+
+// function myFunction(num){
+//     return num*10
+// }
+// console.log(newArray)
+
+
+// Mapping an Array
+
+// const number = [1,2,3,4,5]
+// myNumber = []
+
+// for (let num of number){
+//     myNumber.push(num*2)
+// }
+// console.log(myNumber)
+
+// const myNumber = number.map(function(num){
+//     return num*2
+// })
+// console.log(myNumber);
+
+// const persons = [
+//     {name: 'Kshitij', age: 19},
+//     {name: 'Ayush', age: 17},
+//     {name: 'Ram', age: 20}
+// ]
+
+// const perName = persons.map((person) => person.age+1)
+// console.log(perName);
+
+// Error Handling
+
+// function newFunction(a,b,c){
+//     if (b===0){
+//         throw new SyntaxError("Second parameter can't be zero");
+//     }
+// }
+
+// try {
+//     console.log(newFunction(1,0,4))
+// }
+// catch(e){
+//     console.log(e)
+//     console.log(e.name)
+//     console.log(e.message)
+// }
+// finally{
+//     console.log("It's work")
+// }
+
+
+// Regular Expression
+// const regExn = /kshitij/i;
+// console.log(regExn.test("Hi, My name is Kshitij"))
+
