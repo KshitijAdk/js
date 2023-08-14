@@ -199,6 +199,25 @@
 // finally{
 //     console.log("It's work")
 // }
+// Error Handling
+
+// function newFunction(a,b,c){
+//     if (b===0){
+//         throw new SyntaxError("Second parameter can't be zero");
+//     }
+// }
+
+// try {
+//     console.log(newFunction(1,0,4))
+// }
+// catch(e){
+//     console.log(e)
+//     console.log(e.name)
+//     console.log(e.message)
+// }
+// finally{
+//     console.log("It's work")
+// }
 
 
 // Regular Expression
