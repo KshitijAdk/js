@@ -224,3 +224,54 @@
 // const regExn = /kshitij/i;
 // console.log(regExn.test("Hi, My name is Kshitij"))
 
+
+// Factory Functions
+
+// function user(name,age){
+//     const userInfo = {
+//         name,
+//         age,
+//         walk: function(){
+//             console.log(`${name} started walking.`);
+//         }
+//     }
+//     return userInfo
+// }
+
+// const user1 = user("Kshitij", 19)
+// const user2 = user("Swarup", 20)
+// console.log(user1, user2);
+
+// Constructor Functions
+
+// function User(name, age){
+//     this.name = name
+//     this.age = age
+//     this.walk = function(){
+//         console.log("Kshitij started walking");
+//     }
+// }
+// const userInfo = new User("Kshitij",19)
+// console.log(userInfo)
+
+// Create Object using Factory and Constructor Function
+
+// const address = new homeAddress("Birendranagar", "Surkhet", "Nepal")
+// const address2 = new homeAddress("Anamnagar", "Kathmandu", "Nepal")
+
+// // function homeAddress(municipality, district, country){
+// //     return {
+// //         municipality,
+// //         district,
+// //         country 
+// //     }
+// // }
+
+// function homeAddress(municipality, district, country){
+//     this.municipality = municipality,
+//     this.district = district,
+//     this.country = country
+// }
+// console.log(address);
+// console.log(address2);
+
