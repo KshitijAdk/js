@@ -150,18 +150,19 @@
 
 // Promises
 
-const promise = new Promise(function (resolve, reject) {
-  setTimeout(() => {
-    // resolve('Succesfully resolved');
-    reject(new Error("There are some errors found."));
-  }, 2000);
-});
-console.log(promise);
+// const promise = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     // resolve('Succesfully resolved');
+//     reject(new Error("There are some errors found."));
+//   }, 2000);
+// });
+// console.log(promise);
 
-promise.then(function(result){
-  console.log(result)
-}).catch(function(err){
-  console.log(err.message);
-})
+// promise.then(function(result){
+//   console.log(result)
+// }).catch(function(err){
+//   console.log(err.message);
+// })
+
 
 
