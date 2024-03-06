@@ -91,3 +91,26 @@
 // new array containing only the numbers greater than 10.
 
 
+// function greaterArr(arr){
+//     newArr = []
+//     for (let i=0; i<arr.length; i++){
+//         if (arr[i] > 10){
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr
+// }
+
+// myArr = [1,2,3,4,12,13,14,15]
+// console.log(greaterArr(myArr));
+
+
+function flattenArrayToDepth(nestedArray, depth) {
+    return nestedArray.flat(depth);
+}
+
+// Example usage:
+let deeplyNestedArray = [1, [2, [3, [4, [5]]]]];
+
+console.log("Deeply Nested Array:", deeplyNestedArray);
+console.log("Flattened Array with depth 3:", flattenArrayToDepth(deeplyNestedArray, 3));
