@@ -28,7 +28,6 @@
 // }
 // console.log(stringArr());
 
-
 // Write a function that takes an array of numbers and returns a new array with only the even numbers.
 
 // function evenArr(arr){
@@ -36,17 +35,15 @@
 //     newArr = [];
 
 //     for (let i=0; i<arr.length; i++){
-        
+
 //         newArr.push(arr[i])
 //     }
 //     return newArr
 // }
 // console.log(evenArr());
 
-
-// Write a function that takes an array of numbers and a target number, 
+// Write a function that takes an array of numbers and a target number,
 // and returns true if the target number is present in the array, otherwise returns false.
-
 
 // function numCheck(arr, target){
 //     for (let i=0; i<arr.length; i++){
@@ -60,7 +57,6 @@
 // myArr = [1,2,3,4,5,6]
 // targetNum = 6
 // console.log(numCheck(myArr, targetNum));
-
 
 // function stringArr(arr, target){
 //     newArr = []
@@ -76,7 +72,6 @@
 // target = 'kshitij'
 // console.log(stringArr(myArr, target));
 
-
 // function sortArray(){
 //     arr = [1,6,8,2,3,9,4]
 //     sortArr = []
@@ -86,10 +81,8 @@
 // }
 // console.log(sortArray());
 
-
-// Write a function that takes an array of numbers and returns a 
+// Write a function that takes an array of numbers and returns a
 // new array containing only the numbers greater than 10.
-
 
 // function greaterArr(arr){
 //     newArr = []
@@ -104,13 +97,35 @@
 // myArr = [1,2,3,4,12,13,14,15]
 // console.log(greaterArr(myArr));
 
+// Write a function that takes a number as an argument and throws an error if the number is negative.
 
-function flattenArrayToDepth(nestedArray, depth) {
-    return nestedArray.flat(depth);
+// function checkNegative(num){
+//     if (num < 0){
+//         throw new Error("Number cannot be negative")
+//     }
+//     return num *2
+// }
+
+// try {
+//     console.log(checkNegative(2));
+// } catch (error) {
+//     console.log(error.message);
+// }finally{
+//     console.log("Its work");
+// }
+
+// Constructor Functions
+
+function User(name, age) {
+  this.name = name;
+  this.age = age;
+  this.walk = function () {
+    console.log("Kshitij is walking");
+  };
 }
 
-// Example usage:
-let deeplyNestedArray = [1, [2, [3, [4, [5]]]]];
+const user1 = new User("Kshitij", 20);
+console.log(user1);
 
-console.log("Deeply Nested Array:", deeplyNestedArray);
-console.log("Flattened Array with depth 3:", flattenArrayToDepth(deeplyNestedArray, 3));
+const user2 = new User("Safal", 20);
+console.log(user2);
