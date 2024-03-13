@@ -179,29 +179,38 @@
 
 // PROJECT
 
-async function fetchData() {
-  try {
-    const pokemonName = document
-      .getElementById("pokemonName")
-      .value.toLowerCase();
-    const response = await fetch(
-      `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
-    );
+// async function fetchData() {
+//   try {
+//     const pokemonName = document
+//       .getElementById("pokemonName")
+//       .value.toLowerCase();
+//     const response = await fetch(
+//       `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+//     );
 
-    if (!response.ok) {
-      throw new Error("Could not fetch resources");
-    }
+//     if (!response.ok) {
+//       throw new Error("Could not fetch resources");
+//     }
 
-    const data = await response.json();
-    // console.log(data);
-    const pokemonSprite = data.sprites.front_default;
-    const imgElement = document.getElementById("pokemonSprite");
+//     const data = await response.json();
+//     // console.log(data);
+//     const pokemonSprite = data.sprites.front_default;
+//     const pokemonSprite2 = data.sprites.back_default;
+//     const imgElement = document.getElementById("pokemonSprite");
+//     const imgElement2 = document.getElementById("pokemonSprite2");
 
-    imgElement.src = pokemonSprite;
-    imgElement.style.display = "block";
-  } catch (error) {
-    console.error(error);
-  }
-}
+//     imgElement.src = pokemonSprite;
+//     imgElement.style.display = "block";
+//     imgElement2.src = pokemonSprite2;
+//     imgElement2.style.display = "block";
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
 
-fetchData();
+// fetchData();
+
+
+
+// DOCUMENT OBJECT MODEL (DOM)
+
